@@ -10,10 +10,12 @@
 
 ## 📋 Sobre o Projeto
 
-Este projeto é parte do Trabalho de Conclusão de Curso (TCC) em Engenharia da Computação na **FHO - Fundação Hermínio Ometto**.
-O objetivo é desenvolver e validar um protótipo funcional para auxiliar pequenos produtores na tomara de decisão, utilizando conceitos de **Agricultura 4.0**.
+Este projeto integra o Trabalho de Conclusão de Curso (TCC) em Engenharia da Computação na **FHO - Fundação Hermínio Ometto**. O objetivo central é desenvolver uma solução acessível de **Agricultura 4.0** para auxiliar pequenos produtores na tomada de decisão.
 
-O sistema resolve problemas de monitoramento manual (trabalhoso e impreciso) através da automação em três frentes principais: sensoriamento ambiental, visão computacional para contagem de pragas e visualização web centralizada.
+⚠️ **Estado Atual de Desenvolvimento:**
+É importante ressaltar que o projeto encontra-se em seus **primeiros estágios de desenvolvimento**. Embora a arquitetura geral esteja definida e os algoritmos de IA validados, a integração de hardware ainda está em fase de prova de conceito. Especificamente, o **Módulo 1** (Nó de Sensores) opera atualmente como um **protótipo de bancada**, focado na validação da leitura dos sensores e da telemetria via MQTT, antes de avançar para a confecção da placa de circuito impresso (PCB) final e encapsulamento para campo.
+
+O sistema visa resolver problemas de monitoramento manual através de três frentes: sensoriamento ambiental, visão computacional para contagem de pragas e visualização web centralizada.
 
 ---
 
@@ -27,45 +29,41 @@ O repositório está organizado conforme os módulos funcionais do projeto:
 ├── 📂 Modulo_2/IA                    # Scripts de treinamento e validação da CNN (YOLOv8)
 ├── 📂 Sistema_Monitoramento          # Plataforma Web (Dashboard/Backend)
 └── 📄 Artigo.pdf                     # Documentação acadêmica completa
-```
+````
 
-### 1. Módulo 1: Nó de Sensores IoT (`/Modulo_1`)
+### 1\. Módulo 1: Nó de Sensores IoT (`/Modulo_1`)
 
-Responsável pela coleta de dados vitais do solo e ambiente.
-O firmware foi desenvolvido para **ESP32 (NodeMCU)** e comunica-se via protocolo **MQTT**.
+Responsável pela coleta de dados vitais do solo e ambiente. Atualmente em versão de **protótipo**, o firmware foi desenvolvido para **ESP32 (NodeMCU)** e comunica-se via protocolo **MQTT**.
 
-* **Hardware Principal:** ESP32.
-* **Sensores Integrados:**
+  * **Hardware Principal:** ESP32.
+  * **Sensores Integrados:**
+      * Umidade do Solo (Capacitivo)
+      * BME280 (Clima)
+      * BH1750 (Luminosidade)
+      * Sensores de pH e EC
 
-  * Umidade do Solo (Capacitivo)
-  * BME280
-  * BH1750
-  * Sensores de pH e EC
+\<div align="center"\>
+\<img src="assets/20251205\_100210.jpg" alt="Protótipo do Nó de Sensores" width="600"/\>
+\<p\>\<em\>Figura 1: Protótipo funcional do Módulo 1 em bancada com ESP32 e sensores.\</em\>\</p\>
+\</div\>
 
-<div align="center">
-<img src="assets/20251205_100210.jpg" alt="Protótipo do Nó de Sensores" width="600"/>
-<p><em>Figura 1: Protótipo funcional do Módulo 1 com ESP32 e sensores.</em></p>
-</div>
+-----
 
----
-
-### 2. Módulo 2: Inteligência Artificial (`/Modulo_2`)
+### 2\. Módulo 2: Inteligência Artificial (`/Modulo_2`)
 
 Focado na detecção automática da **Mosca-Branca-de-Estufa** (*Trialeurodes vaporariorum*).
 
-* **Modelo:** YOLOv8s
-* **Dataset:** IP102 (subconjunto curado)
-* **Treinamento:**
+  * **Modelo:** YOLOv8s
+  * **Dataset:** IP102 (subconjunto curado)
+  * **Treinamento:**
+      * Resolução 512×512
+      * AdamW
+      * Mosaic desativado
 
-  * Resolução 512×512
-  * AdamW
-  * Mosaic desativado
-
-<div align="center">
-<img src="assets/val_batch1_pred.jpg" alt="Detecção de Mosca Branca com YOLOv8" width="800"/>
-<p><em>Figura 2: Validação do modelo em diferentes cenários de densidade e iluminação.</em></p>
-</div>
-
+\<div align="center"\>
+\<img src="assets/val\_batch1\_pred.jpg" alt="Detecção de Mosca Branca com YOLOv8" width="800"/\>
+\<p\>\<em\>Figura 2: Validação do modelo em diferentes cenários de densidade e iluminação.\</em\>\</p\>
+\</div\>
 
 ## 📊 Resultados do Modelo YOLOv8
 
@@ -76,21 +74,23 @@ Focado na detecção automática da **Mosca-Branca-de-Estufa** (*Trialeurodes va
 | mAP@0.5  | 75.46%     |
 | Latência | 13.98 ms   |
 
----
+-----
 
-### 3. Sistema de Monitoramento (`/Sistema_Monitoramento`)
+### 3\. Sistema de Monitoramento (`/Sistema_Monitoramento`)
 
-Dashboard web em tempo real via MQTT.
+Dashboard web para visualização dos dados em tempo real via MQTT.
 
-<div align="center">
-<img src="assets/dashboard.png" alt="Dashboard Web" width="800"/>
-<p><em>Figura 3: Interface exibindo dados ambientais em tempo real.</em></p>
-</div>
+\<div align="center"\>
+\<img src="assets/dashboard.png" alt="Dashboard Web" width="800"/\>
+\<p\>\<em\>Figura 3: Interface exibindo dados ambientais em tempo real.\</em\>\</p\>
+\</div\>
 
----
+-----
 
 ## 👨‍💻 Autor
 
 **Victor Augusto de Oliveira**
 FHO – Engenharia da Computação
 📩 [victoroliveira855@alunos.fho.edu.br](mailto:victoroliveira855@alunos.fho.edu.br)
+
+```
