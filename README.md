@@ -43,7 +43,7 @@ O firmware foi desenvolvido para **ESP32 (NodeMCU)** e comunica-se via protocolo
   * Sensores de pH e EC
 
 <div align="center">
-<img src="assets/20251205_090132.jpg" alt="Protótipo do Nó de Sensores" width="600"/>
+<img src="assets/20251205_100210.jpg" alt="Protótipo do Nó de Sensores" width="600"/>
 <p><em>Figura 1: Protótipo funcional do Módulo 1 com ESP32 e sensores.</em></p>
 </div>
 
@@ -73,7 +73,7 @@ Focado na detecção automática da **Mosca-Branca-de-Estufa** (*Trialeurodes va
 Dashboard web em tempo real via MQTT.
 
 <div align="center">
-<img src="assets/Captura_de_tela_2025-12-05_085925.png" alt="Dashboard Web" width="800"/>
+<img src="assets/dashboard.png" alt="Dashboard Web" width="800"/>
 <p><em>Figura 3: Interface exibindo dados ambientais em tempo real.</em></p>
 </div>
 
