@@ -66,6 +66,16 @@ Focado na detecção automática da **Mosca-Branca-de-Estufa** (*Trialeurodes va
 <p><em>Figura 2: Validação do modelo em diferentes cenários de densidade e iluminação.</em></p>
 </div>
 
+
+## 📊 Resultados do Modelo YOLOv8
+
+| Métrica  | Valor      |
+| -------- | ---------- |
+| Precisão | **89.61%** |
+| Recall   | 67.93%     |
+| mAP@0.5  | 75.46%     |
+| Latência | 13.98 ms   |
+
 ---
 
 ### 3. Sistema de Monitoramento (`/Sistema_Monitoramento`)
@@ -76,36 +86,6 @@ Dashboard web em tempo real via MQTT.
 <img src="assets/dashboard.png" alt="Dashboard Web" width="800"/>
 <p><em>Figura 3: Interface exibindo dados ambientais em tempo real.</em></p>
 </div>
-
----
-
-## 🚀 Como Executar
-
-### IA — YOLOv8
-
-```bash
-cd Modulo_2/IA
-pip install ultralytics
-```
-
-Exemplo de inferência:
-
-```python
-from ultralytics import YOLO
-model = YOLO('best.pt')
-results = model('assets/imagem_teste.jpg')
-```
-
----
-
-## 📊 Resultados
-
-| Métrica  | Valor      |
-| -------- | ---------- |
-| Precisão | **89.61%** |
-| Recall   | 67.93%     |
-| mAP@0.5  | 75.46%     |
-| Latência | 13.98 ms   |
 
 ---
 
