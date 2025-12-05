@@ -92,5 +92,3 @@ Dashboard web para visualização dos dados em tempo real via MQTT.
 **Victor Augusto de Oliveira**
 FHO – Engenharia da Computação
 📩 [victoroliveira855@alunos.fho.edu.br](mailto:victoroliveira855@alunos.fho.edu.br)
-
-```
