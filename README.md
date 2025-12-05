@@ -29,7 +29,7 @@ O repositório está organizado conforme os módulos funcionais do projeto:
 ├── 📂 Modulo_2/IA                    # Scripts de treinamento e validação da CNN (YOLOv8)
 ├── 📂 Sistema_Monitoramento          # Plataforma Web (Dashboard/Backend)
 └── 📄 Artigo.pdf                     # Documentação acadêmica completa
-````
+```
 
 ### 1\. Módulo 1: Nó de Sensores IoT (`/Modulo_1`)
 
