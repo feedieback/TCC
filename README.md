@@ -42,10 +42,10 @@ Responsável pela coleta de dados vitais do solo e ambiente. Atualmente em vers�
       * BH1750 (Luminosidade)
       * Sensores de pH e EC
 
-\<div align="center"\>
-\<img src="assets/20251205\_100210.jpg" alt="Protótipo do Nó de Sensores" width="600"/\>
-\<p\>\<em\>Figura 1: Protótipo funcional do Módulo 1 em bancada com ESP32 e sensores.\</em\>\</p\>
-\</div\>
+<div align="center">
+<img src="assets/20251205_100210.jpg" alt="Protótipo do Nó de Sensores" width="600"/>
+<p><em>Figura 1: Protótipo funcional do Módulo 1 com ESP32 e sensores.</em></p>
+</div>
 
 -----
 
@@ -60,10 +60,10 @@ Focado na detecção automática da **Mosca-Branca-de-Estufa** (*Trialeurodes va
       * AdamW
       * Mosaic desativado
 
-\<div align="center"\>
-\<img src="assets/val\_batch1\_pred.jpg" alt="Detecção de Mosca Branca com YOLOv8" width="800"/\>
-\<p\>\<em\>Figura 2: Validação do modelo em diferentes cenários de densidade e iluminação.\</em\>\</p\>
-\</div\>
+<div align="center">
+<img src="assets/val_batch1_pred.jpg" alt="Detecção de Mosca Branca com YOLOv8" width="800"/>
+<p><em>Figura 2: Validação do modelo em diferentes cenários de densidade e iluminação.</em></p>
+</div>
 
 ## 📊 Resultados do Modelo YOLOv8
 
@@ -80,10 +80,10 @@ Focado na detecção automática da **Mosca-Branca-de-Estufa** (*Trialeurodes va
 
 Dashboard web para visualização dos dados em tempo real via MQTT.
 
-\<div align="center"\>
-\<img src="assets/dashboard.png" alt="Dashboard Web" width="800"/\>
-\<p\>\<em\>Figura 3: Interface exibindo dados ambientais em tempo real.\</em\>\</p\>
-\</div\>
+<div align="center">
+<img src="assets/dashboard.png" alt="Dashboard Web" width="800"/>
+<p><em>Figura 3: Interface exibindo dados ambientais em tempo real.</em></p>
+</div>
 
 -----
 
